@@ -15,3 +15,6 @@ Set-Up:
     -> After cloning the repository, I forked the repository as requested to enable me to be able to make changes to my files without affecting the files in the main repository.
 
     -> All files will be updated as I work on this project into the forked repository of the DCIT_205_IA repository and on completion of the project a pull request will be made to upload all my final files to the main repository
+
+Screenshots:
+
