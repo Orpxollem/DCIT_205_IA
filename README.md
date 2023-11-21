@@ -17,4 +17,3 @@ Set-Up:
     -> All files will be updated as I work on this project into the forked repository of the DCIT_205_IA repository and on completion of the project a pull request will be made to upload all my final files to the main repository
 
 Screenshots:
-
