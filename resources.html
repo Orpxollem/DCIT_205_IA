@@ -10,46 +10,67 @@
         <meta http-equiv="refresh" content="15">
         <!--Ensures that the page fits well on all device screens-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <title>
             Department of Computer Science | University of Ghana | Resources
         </title>
+        
+        <header class="header_main" style="margin-top: 25px;">
+            <div class="header_logo">
+                <img src="cslogo.png" alt="CS Department Logo" title="" style="width:250px">
+            </div>
+
+            <nav class = "header_nav" >
+                
+                <input type="checkbox" id="nav_check">
+                    <label for="nav_check">
+                        <i class="fa fa-bars" id="main_btn"></i>
+                        <i class="fa fa-times" id="close"></i>
+                    </label>
+                </input>
+
+                <ul class="nav-menu" style="touch-action: pan-y;">
+                    <li>
+                        <a class="active" href="main.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="active" href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a class="active" href="catalog.html">Catalog</a>
+                    </li>
+                    <li>
+                        <a class="active" href="contacts.html">Contacts</a>
+                    </li>
+                    <li>
+                        <a class="active" href="help.html">Help</a>
+                    </li>
+                    <li class="active">
+                    <div class="extend-menu">
+                        <button class="drop_btn">More</button>
+                        <div class="drop_down">   
+                            <ul>
+                                <li><a href="resources.html">Resources</a></li>
+                                <li><a href="events.html">Events</a></li>
+                                <li><a href="alumni.html">Alumni</a></li>
+                                <li><a href="insight.html">Insight & Job Opportunities</a></li>
+                                <li><a href="news.html">Technology News & Updates</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </li>
+                </ul>
+                
+            </nav>
+            
+
+        </header>
     </head>
 
     <body>
         Proposed page for Resources page
-        <div id="logo"><img src="cslogo.png" alt="CS Department Logo" title="" style="width:250px"></div>
-        <div class="Website Sections">
-            <ul>
-                <li>
-                    <a href="main.html">Home</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="catalog.html">Catalog</a>
-                </li>
-                <li>
-                    <a href="contacts.html">Contacts</a>
-                </li>
-                <li>
-                    <a href="help.html">Help</a>
-                </li>
-                <li>
-                    More
-                    <div class="Website Sections Extend">
-                        <select name="More" id="more">
-                            <option><a href="resources.html">Resources</a></option>
-                            <option><a href="events.html">Events</a></option>
-                            <option><a href="alumni.html">Alumni</a></option>
-                            <option><a href="insight.html">Insight & Job Opportunities</a></option>
-                            <option><a href="news.html">Technology News & Updates</a></option>
-                        </select>
-                    </div>
-                </li>
-            </ul>
-        </div>
     </body>
 
 </html>
