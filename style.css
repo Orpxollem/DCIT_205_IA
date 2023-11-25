@@ -17,7 +17,7 @@ header {
     width: 100% !important;
     top: 0;
     z-index: 997;
-    position: relative;
+    /*position: relative;*/
     background-color: #fff;
     display: inline-block;
     position: sticky;
@@ -34,7 +34,6 @@ header {
 .header_logo{
     width: fit-content;
     line-height: 100%;
-    font-weight: bold;
     display: flex;
     padding-left: 60px;
 }
@@ -67,7 +66,7 @@ header {
     padding: 0 10px;
     position: relative;
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-weight: 600;
     line-height: 50%;
     text-transform: uppercase;
     color: #777;
@@ -114,7 +113,7 @@ label #close{
     padding: 0 10px;
     position: relative;
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-weight: 550;
     line-height: 50%;
     text-transform: uppercase;
     color: #777;
@@ -158,6 +157,7 @@ label #close{
 
 .extend-menu{
     display: inline-block;
+
 }
 
 .drop_down a:hover{
@@ -188,16 +188,16 @@ body {
     font-size: 14px;
     font-weight: 300;
     line-height: 1.625em;
-    position: relative;
+    /*position: relative;*/
     flex-direction: column;
     margin: 0;
     padding: 0px;
 }
 
 footer{
-    width: 100%;
+    /*width: 100%;*/
     margin-top: auto;
-    position: relative;
+    /*position: relative;*/
     bottom: 0;
     background: linear-gradient(to right, #266c9a, #2c3e50);
     color: #fff;
@@ -392,4 +392,59 @@ form input{
     .footer_final{
         margin: 20px auto;
     }
+}
+
+.media_container{
+    position: relative;
+    display: block;
+    align-items: center;
+    cursor: default;
+    
+}
+
+#bg-video{
+    width: 100%;
+    height: 450px;
+    padding: 0 10% 0 10%;
+}
+
+#bg-image{
+    filter: blur(1px);
+    width: 100%;
+    height: 450px;
+    padding: 0 10% 0 10%;
+    opacity: 0.75;
+
+}
+.video-text{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 13%;
+    line-height: 1.625em;
+    color: rgb(134, 153, 170);
+}
+
+.image-text{
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    padding: 200px 0;
+    text-align: center;
+    position: absolute;
+}
+
+.video-overlay{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-overlay{
+    display: flex;
+    justify-content: center;
 }
