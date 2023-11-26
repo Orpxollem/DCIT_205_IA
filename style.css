@@ -17,7 +17,6 @@ header {
     width: 100% !important;
     top: 0;
     z-index: 997;
-    /*position: relative;*/
     background-color: #fff;
     display: inline-block;
     position: sticky;
@@ -184,20 +183,17 @@ label #close{
  
 body {
     color: #777;
-    font-family: "Poppins", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 14px;
     font-weight: 300;
     line-height: 1.625em;
-    /*position: relative;*/
     flex-direction: column;
     margin: 0;
     padding: 0px;
 }
 
 footer{
-    /*width: 100%;*/
     margin-top: auto;
-    /*position: relative;*/
     bottom: 0;
     background: linear-gradient(to right, #266c9a, #2c3e50);
     color: #fff;
@@ -335,6 +331,7 @@ form input{
     animation: moving 4s linear infinite;
 }
 
+
 @keyframes moving{
     0%{
         left: -20px;
@@ -392,6 +389,9 @@ form input{
     .footer_final{
         margin: 20px auto;
     }
+    .flips{
+        display: none;
+    }
 }
 
 .media_container{
@@ -447,4 +447,235 @@ form input{
 .image-overlay{
     display: flex;
     justify-content: center;
+}
+
+.secondary{
+    position: relative;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.secondary h1{
+    font-size: 50px;
+    padding-bottom: 2%;
+}
+
+.secondary h3 a{
+    color: rgb(134, 153, 170);
+}
+
+.secondary h3{
+    padding-bottom: 1%;
+}
+
+.secondary h3 a:hover{
+    color: goldenrod;
+}
+
+
+.secondary h3{
+    font-size: 30px;
+}
+
+.secondary p{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1%;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.left-display img{
+    float: left;
+}
+
+.flips{
+    width: 90%;
+    position: relative;
+    left: 10%;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.flip-container{
+    position: relative;
+    display: flex;
+    margin-left: 28px;
+    margin-right: 60px;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.flip-container:hover > .back-view{
+    transform: perspective(800px) rotateY(0deg);
+}
+
+.flip-container:hover > .front-view{
+    transform: perspective(800px) rotateY(180deg);
+}
+
+.front-view{
+    position: relative;
+    line-height: 2em;
+    width: 100%;
+    height: 380px;
+    background: rgb(134, 153, 170);
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+    transition: transform .5s ease;
+    transform: perspective(800px) rotateY(0deg);
+}
+
+.back-view{
+    position: absolute;
+    width: 100%;
+    height: 380px;
+    background: rgb(134, 153, 170);
+    color: black;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+    transition: transform .5s ease;
+    transform: perspective(800px) rotateY(-180deg);
+}
+
+.back-view h1 a{
+    color: rgb(134, 153, 170);
+}
+
+.back-view h1 a:hover{
+    color: goldenrod;
+}
+
+.ext-front-view{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: rgb(134, 153, 170);
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+.flip-container2{
+    position: relative;
+    display: flex;
+    margin-right: 60px;
+    flex-direction: column;
+    width: 700px;
+    text-align: center;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.ext-front-view2{
+    position: relative;
+    width: 700px;
+    height: 300px;
+    background: rgb(134, 153, 170);
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+.profile img{
+    margin-left: -15%;
+}
+
+.ext-course-title:hover{
+    color: #777;
+}
+
+.ext-cover img{
+    transition: all 0.3s ease;
+}
+
+.ext-cover:hover img{
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.course-title{
+    font-size: 35px;
+    padding-top: 20%;
+}
+
+.ext-course-title{
+    padding-top: 10px;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.content{
+    text-align: justify;
+    padding: 0 20px;
+    padding-top: 15%;
+    font-size: 22px;
+}
+
+.back-view h1{
+    padding-top: 15%;
+    padding-bottom: 15%;
+    font-weight: bold;
+    background: white;
+}
+
+.secondary-final{
+    list-style: none;
+    margin-left: 10%;
+    font-size: 30px;
+}
+
+.message-form{
+    padding: 2%;
+    box-shadow: var(--shadow);
+    color: black;
+    border: 1px solid black;
+    display: inline-block;
+    box-sizing: border-box;
+    height: auto;
+    width: auto;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.message-form input{
+    border: 1px solid black;
+    height: 35px;
+    margin-top: 5px;
+    color: black;
+    padding-left: 5%;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.message-form textarea{
+    box-shadow:0px 5px 5px 0px rgba(0,0,0,0.2);
+}
+
+.message-form button{
+    border: 1px solid #777;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.message-form button:hover{
+    background-color: #777;
+}
+
+.help-input{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: large;
+    font-weight: bold;
 }
